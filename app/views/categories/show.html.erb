@@ -13,7 +13,7 @@
 			<div class="actions">
 				<%= link_to "Edit", edit_category_link_path(@category, link), class: "edit" %>
 
-				<%= link_to "Duplicate", new_category_link_path(@category), class: "edit" %>
+				<%= link_to "Duplicate", new_category_link_path(@category, duplicate_id: link.id), class: "edit" %>
 
 				<%= link_to "Delete", category_link_path(@category, link), method: :delete, class: "delete", confirm: "Are you sure you want to delete?" %>
 
