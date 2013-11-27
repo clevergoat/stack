@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', group: :development
+gem 'pg', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -54,3 +55,7 @@ gem 'steer'
 
 # add in Active Admin CMS, it's pretty new so we have to be specific
 gem "activeadmin", github: "gregbell/active_admin"
+
+# Heroku Gems:
+# because Heroku asks for this gem, we're going to install it
+gem 'rails_12factor', group: :production
