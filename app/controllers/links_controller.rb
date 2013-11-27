@@ -56,7 +56,7 @@ class LinksController < ApplicationController
 
   # only allow the following from the form in order to stop people from hacking our site
   def link_params
-  	params.require(:link).permit(:name, :description, :url)
+  	params.require(:link).permit(:name, :description, :url, :is_recommended)
   end
 
 
