@@ -59,3 +59,6 @@ gem "activeadmin", github: "gregbell/active_admin"
 # Heroku Gems:
 # because Heroku asks for this gem, we're going to install it
 gem 'rails_12factor', group: :production
+
+# Make sure users can't swear
+gem "obscenity"
