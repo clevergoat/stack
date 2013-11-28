@@ -62,3 +62,7 @@ gem 'rails_12factor', group: :production
 
 # Make sure users can't swear
 gem "obscenity"
+
+# for scraping
+gem 'nokogiri'
+gem 'httparty'
